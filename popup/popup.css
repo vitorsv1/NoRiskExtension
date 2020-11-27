@@ -1,0 +1,115 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 2ch;
+    margin-top: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 60ch;
+    max-width: 80ch;
+    /* width: fit-content;
+    width: -moz-fit-content; */
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    font-size: 3ch;
+    font-weight: lighter;
+}
+
+.clear:hover {
+    cursor: pointer;
+    background-color: #bb86fc30;
+    /* color: black; */
+}
+
+.requests {
+    display: flex;
+    flex-direction: column;
+}
+
+.request-header {
+    display: flex;
+    flex-direction: row;
+    font-weight: lighter;
+    /* height: 2ch; */
+    /* background-color: white; */
+    padding: 1ch;
+}
+
+.request {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255, 0.06);
+    /* background-color: #bb86fc10; */
+    color: white;
+    padding: 1ch;
+    max-width: 200ch;
+    border-radius: 1ch;
+}
+
+.request:hover {
+    background-color: #bb86fc30;
+    /* color: #d2aaff; */
+    cursor: pointer;
+}
+
+.method {
+    /* flex: 1; */
+    width: 11ch;
+}
+
+.type {
+    /* flex: 1; */
+    width: 13ch;
+}
+
+.short-url {
+    flex: 1;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+    white-space: normal;
+}
+
+
+.content {
+    max-height: 0;
+    /* padding: 0 1ch; */
+    padding: 0 2ch;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5ch;
+}
+
+.content-item {
+    white-space: normal;
+    padding: 1ch;
+    /* overflow: hidden; */
+}
+
+.content-item-key {
+    white-space: normal;
+    color: #d2aaff;
+    font-weight: lighter;
+    font-size: 2ch;
+    /* width: 11ch; */
+    /* overflow: hidden; */
+}
+
+.content-item-value {
+    flex: 1;
+    white-space: normal;
+    /* font-size: 2ch; */
+    
+    /* overflow: hidden; */
+}

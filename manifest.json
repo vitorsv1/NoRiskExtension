@@ -1,18 +1,27 @@
 {
-  "name": "NoRisk",
-  "version": "0.1.0",
-  "description": "You deserve respect without Risks!",
-  "background_page" : "background.html",
-  "options_page": "options.html",
-  "icons": {
-    "16" : "images/GB-19.png",
-    "48" : "images/GB-48.png",
-    "128" : "images/GB-128.png"
-  },
-  "browser_action": {
-    "default_icon": "images/GB-19.png",
-    "default_title": "NoRisk",
-    "default_popup": "popup.html"
-  },
-  "permissions": ["tabs"]
+    "description": "A simple Web Sniffer",
+    "manifest_version": 2,
+    "name": "WebSniffer",
+    "version": "1.0",
+    "permissions": [
+        "webRequest",
+        "activeTab",
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": [
+            "background-script.js"
+        ]
+    },
+    "icons": {
+        "48": "icons/border-48.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "48": "icons/border-48.png"
+        },
+        "default_title": "WebSniffer",
+        "default_popup": "popup/popup.html"
+    },
+    "content_security_policy": "default-src 'self'"
 }
